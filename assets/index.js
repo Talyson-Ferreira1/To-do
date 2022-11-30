@@ -22,7 +22,7 @@ const form = document.querySelector('.item');
 const btnSubmit = document.querySelector('.addItem');
 
 
-form.onsubmit = (event) =>{event.preventDefault()}
+form.onsubmit = (event) =>{event.preventDefault()};
 
 btnSubmit.addEventListener("click", ()=>{
     const input = document.querySelector('.input');

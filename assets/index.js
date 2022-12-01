@@ -2,7 +2,7 @@
 var ul = document.querySelector('.containerList');
 let ArrayTarefas = new Array();
 
-
+setTimeout(load,5000);
 function preferencias(){
     if(localStorage.hasOwnProperty("li")){
 

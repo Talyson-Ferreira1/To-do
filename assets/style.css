@@ -95,9 +95,68 @@ li
     }
 }
 /* ------------------------- estilos ------------------------------- */
+.warning
+{
+    top: 0;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background:  rgba(255, 255, 255, 0.213);
+    backdrop-filter: blur(30px);
+    display: flex;
+    
+}
+.warning span
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.containerWarningIcons
+{
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+.repositorio, .linkedin, .portfolio
+{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.repositorio::before
+{
+    content: '\f09b';
+    font-family: fontAwesome;
+    font-size: 1.5rem;
+    color: black;
+}
+.linkedin::before
+{
+    content: '\f08c';
+    font-family: fontAwesome;
+    font-size: 1.5rem;
+    color: black;
+}
+.portfolio::before
+{
+    content: '\f007';
+    font-family: fontAwesome;
+    font-size: 1.5rem;
+    color: black;
+}
+
 header
 {
     min-width: 50rem;
+    margin-top: 6rem;
     border: 1px solid var(--gray-primary);
     display: flex;
     align-items: center;
@@ -319,6 +378,10 @@ main
     .addItem{
         width: 90%;
     }
+    .warning span{
+        width: 60%;
+    }
+
 }
 @media (max-width:700px){
     .contentCard{
@@ -336,11 +399,18 @@ main
         font-size: 1rem;
     }
 }
-@media (max-width:700px){
+@media (max-width:500px){
     .input-box span{
         font-size: .8em;
     }
     .contentText{
        font-size: .8em; 
+    }
+    .warning span{
+        width: 70%;
+        font-size: .8em;
+    }
+    .repositorio::before, .linkedin::before, .portfolio::before{
+        font-size: 1rem;
     }
 }  

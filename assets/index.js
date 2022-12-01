@@ -2,7 +2,6 @@
 var ul = document.querySelector('.containerList');
 let ArrayTarefas = new Array();
 
-setTimeout(load,5000);
 function preferencias(){
     if(localStorage.hasOwnProperty("li")){
 
@@ -12,11 +11,41 @@ function preferencias(){
     }else return;
 
 }
-function load()
-{
+
+setTimeout(load,5000);
+
+function load(){
     const load = document.querySelector(".containerLoad")
     load.style.display="none"
 }
+
+const warning = document.querySelector('.warning');
+const warningText = document.querySelector('.warning span');
+const warningRepositorio = document.querySelector('.repositorio');
+const warningLinkedin = document.querySelector('.linkedin');
+const warningPortfolio = document.querySelector('.portfolio');
+
+
+warningRepositorio.addEventListener('mouseenter', ()=>{
+
+    warningText.innerHTML="Visitar o repositório do projeto"
+    
+})
+warningLinkedin.addEventListener('mouseenter', ()=>{
+
+    warningText.innerHTML="Visitar linkedin do desenvolvedor"})
+
+warningPortfolio.addEventListener('mouseenter', ()=>{
+
+    warningText.innerHTML="Visitar portfólio do desenvolvedor"
+    
+})
+warning.addEventListener('mouseout', ()=>{
+
+    warningText.innerHTML="Esse projeto tem fins educacionais"
+    
+})
+
 
 const form = document.querySelector('.item');
 const btnSubmit = document.querySelector('.addItem');

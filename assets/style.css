@@ -369,8 +369,8 @@ main
 .contentCard.active .edit::before
 {   
 
-    content: 'ok';
-    font-family: 'Poppins', sans-serif; 
+    content: '\f00c';
+    font-family: fontAwesome; 
 }
 
 @media (max-width:700px){

@@ -329,6 +329,8 @@ main
     font-family: fontAwesome;
     color: var(--black);
     font-size: 1.5em;
+    outline: none;
+ 
 }
 .delete::before
 {

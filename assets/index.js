@@ -142,4 +142,3 @@ function fullScreen(){
     }
 }
 
-//Criar dois botões, o primeiro corresponde a edição do elemento da lista, o segundo a

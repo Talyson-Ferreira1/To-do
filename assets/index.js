@@ -3,7 +3,7 @@ var ul = document.querySelector('.containerList');
 let ArrayTarefas = new Array();
 
 function preferencias(){
-    fullScreen()
+    /* fullScreen() */
     
     if(localStorage.hasOwnProperty("li")){
 

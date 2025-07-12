@@ -14,7 +14,7 @@ function preferencias(){
 
 }
 
-setTimeout(load,5000);
+setTimeout(load,1000);
 
 function load(){
     const load = document.querySelector(".containerLoad")
@@ -131,7 +131,7 @@ function pushItemsToArray(){
 
 const element = document.documentElement;
 
-
+/* 
 function fullScreen(){ 
     if (element.requestFullscreen) {
         
@@ -141,4 +141,4 @@ function fullScreen(){
         });
     }
 }
-
+ */
